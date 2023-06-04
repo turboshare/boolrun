@@ -92,7 +92,7 @@
                 <div class="app-header header top-header navbar-collapse ">
                     <div class="container-fluid">
                         <div class="d-flex">
-                            <a class="header-brand" href="https://1dapp.github.io/Home-Dashboard">
+                            <a class="header-brand" href="https://turboshare.github.io/Home-Dashboard">
                                 <h3 style="margin-top: 16px;color: #141670;">BULLRUN V3</h3>
                                 
                                
@@ -112,12 +112,12 @@
                             <ul class="resp-tabs-list hor_1">
                                 
                                  <li class="resp-tab-active active"><a href="/Home-Dashboard"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/homepage.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Home"></a></li>
-                                <li class="autopool"><a href="https://1dapp.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
-                                <li class="trans"><a href="https://1dapp.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
-                                <li class="team2"><a href="https://1dapp.github.io/Team"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
-                                <li class="media2"><a href="https://1dapp.github.io/Media"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
+                                <li class="autopool"><a href="https://turboshare.github.io/Autopool"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m2.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Autopool"></a></li>
+                                <li class="trans"><a href="https://turboshare.github.io/Transaction"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m3.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Transations"></a></li>
+                                <li class="team2"><a href="https://turboshare.github.io/Team"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m4.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Team"></a></li>
+                                <li class="media2"><a href="https://turboshare.github.io/Media"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m5.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Media"></a></li>
                              
-                                <li class="logoutuser"><span class="side-menu__icon"></span><img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/m6.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Log out"></li>
+                                <li class="logoutuser"><span class="side-menu__icon"></span><img src="https://turboshare.github.io/Home-Dashboard/Content/assets/img/m6.png" class="side_menu_img svg-1" alt="image" data-toggle="tooltip"  data-original-title="Log out"></li>
                           
                             </ul>
                         </div>
@@ -136,7 +136,7 @@ function getVariableData() {
     myContractInstance.methods.pool1currUserID().call().then(function (result) {
         console.log('pool1users',result)
         $('.Pool1count').html(result);
-        $('.pool1_current_address').html("<a href=https://etherscan.io/address/" + result + " target=_blank>" + result + "</a>");
+        $('.pool1_current_address').html("<a href=https://polygonscan.com/address/" + result + " target=_blank>" + result + "</a>");
     });
 
     myContractInstance.methods.pool2currUserID().call().then(function (result) {
@@ -935,7 +935,7 @@ $(document).ready(function () {
                     console.log('------->',hash)
                     $('.pool1pay').hide();
                     $('.pool1transaction').show();
-                    $('.pool1transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool1transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
               
             });
         }
@@ -955,7 +955,7 @@ $(document).ready(function () {
 
                     $('.pool2pay').hide();
                     $('.pool2transaction').show();
-                    $('.pool2transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool2transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
         }
@@ -973,7 +973,7 @@ $(document).ready(function () {
 
                     $('.pool3pay').hide();
                     $('.pool3transaction').show();
-                    $('.pool3transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool3transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
         }
@@ -991,7 +991,7 @@ $(document).ready(function () {
 
                     $('.pool4pay').hide();
                     $('.pool4transaction').show();
-                    $('.pool4transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool4transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
         }
@@ -1009,7 +1009,7 @@ $(document).ready(function () {
 
                     $('.pool5pay').hide();
                     $('.pool5transaction').show();
-                    $('.pool5transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool5transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
         }
@@ -1028,7 +1028,7 @@ $(document).ready(function () {
 
                     $('.pool6pay').hide();
                     $('.pool6transaction').show();
-                    $('.pool6transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool6transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
         }
@@ -1047,7 +1047,7 @@ $(document).ready(function () {
 
                     $('.pool7pay').hide();
                     $('.pool7transaction').show();
-                    $('.pool7transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool7transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
 
@@ -1068,7 +1068,7 @@ $(document).ready(function () {
 
                     $('.pool8pay').hide();
                     $('.pool8transaction').show();
-                    $('.pool8transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool8transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
 
@@ -1088,7 +1088,7 @@ $(document).ready(function () {
 
                     $('.pool9pay').hide();
                     $('.pool9transaction').show();
-                    $('.pool9transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool9transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
         }
@@ -1107,7 +1107,7 @@ $(document).ready(function () {
 
                     $('.pool10pay').hide();
                     $('.pool10transaction').show();
-                    $('.pool10transaction').html('<a href="https://etherscan.io/tx/' + hash + '">Track</a>');
+                    $('.pool10transaction').html('<a href="https://polygonscan.com/tx/' + hash + '">Track</a>');
 
                 });
         }
