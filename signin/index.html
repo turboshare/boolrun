@@ -4,7 +4,7 @@
     <title>BullRun V3 Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon href="https://1dapp.github.io/signup/assets/img/bullrun3.png">
+    <link rel="shortcut icon" type="image/x-icon href="https://turboshare.github.io/boolrun/logo.svg">
 
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
@@ -231,7 +231,7 @@ $(document).ready(function () {
             myContractInstance.methods.users(account).call().then(function (result) {
                 if (result[0]) {
                     localStorage.setItem("address", account);
-                    location.href = "https://turboshare.github.io/Home-Dashboard";
+                    location.href = "https://turboshare.github.io/boolrun/Home-Dashboard";
                 }
                 else {
                     $('.error').html('You need to register first');
@@ -260,7 +260,7 @@ $(document).ready(function () {
                 if (result1.status == "0x1") {
                     alert("success")
                     localStorage.setItem("address", account);
-                    location.href = "https://turboshare.github.io/Home-Dashboard";
+                    location.href = "https://turboshare.github.io/boolrun/Home-Dashboard";
                 }
                 else {
                     $('.error').html('Transaction Failed');
@@ -330,7 +330,7 @@ $(document).ready(function () {
                     if (receipt.status) {
                         alert("success")
                         localStorage.setItem("address", account);
-                        location.href = "https://turboshare.github.io/Home-Dashboard";
+                        location.href = "https://turboshare.github.io/boolrun/Home-Dashboard";
                     }
                     else {
                         $('.error').html('Transaction Failed');
@@ -355,7 +355,7 @@ $(document).ready(function () {
                        
 
                             localStorage.setItem("address", add);
-                            location.href = "https://turboshare.github.io/Home-Dashboard";
+                            location.href = "https://turboshare.github.io/boolrun/Home-Dashboard";
                         }
                         else {
                             $('.error').html('You need to register first');
@@ -423,7 +423,7 @@ $(document).ready(function () {
                         <p class="error m-b-10 alert alert-danger" style="display:none">
 
                         </p>
-                        <p class="m-b-15 text-right text-white">Dont have account ? <a href="https://turboshare.github.io/signup" class="text-white"> Sign up</a></p>
+                        <p class="m-b-15 text-right text-white">Dont have account ? <a href="https://turboshare.github.io/boolrun/signup" class="text-white"> Sign up</a></p>
 
                         <div class="container-login100-form-btn">
                             <button class="btn-success login100-form-btn" id="lgmbtn">
@@ -449,17 +449,7 @@ $(document).ready(function () {
                         
                         <div class="purchase-token-btn text-center" style="margin-bottom:20px;margin-top:20px;">
                                                                                                                
-                                                                                                             
-                    <a href="https://1dapp.github.io/bullrunonepager.pdf" target="_blank" class="btn btn-lg btn-gradient-blue btn-round btn-glow"><i class="fa fa-file-pdf-o" ></i> &nbsp;  Presentation 1</a>
-                </div>
-                
-                <div class="purchase-token-btn text-center" style="margin-bottom:20px;margin-top:20px;">
-                    <a href="https://1dapp.github.io/autopoolworking.pdf" target="_blank" class="btn btn-lg btn-gradient-blue btn-round btn-glow"><i class="fa fa-file-pdf-o" ></i> &nbsp;  Presentation 2</a>
-                </div>
-                
-                <div class="purchase-token-btn text-center" style="margin-bottom:20px;margin-top:20px;">
-                    <a href="https://1dapp.github.io/bullrun.pdf" target="_blank" class="btn btn-lg btn-gradient-blue btn-round btn-glow"><i class="fa fa-file-pdf-o" ></i> &nbsp;  Presentation 3</a>
-                </div>
+                                                                 
                         
                     </form>
 
@@ -475,7 +465,7 @@ $(document).ready(function () {
                                 <a class="sharebutton twitter btn" target="_blank" style="background-color:#00acee;color:white" href="https://twitter.com"><i class=" fa fa-twitter"></i> </a>
                                 <a class="sharebutton linkedin btn" target="_blank" style="background-color:#0e76a8;color:white" href="#"><i class=" fa fa-linkedin"></i> </a>
 
-                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#0088cc;color:white" href="https://t.me/BullRunV3"><i class="fa fa-telegram"></i> </a>
+                                <a class="sharebutton telegram btn" target="_blank" style="background-color:#0088cc;color:white" href="https://t.me"><i class="fa fa-telegram"></i> </a>
                                 <a class="sharebutton telegram btn" target="_blank" style="background-color:#ff0000;color:white" href="#"><i class="fa fa-youtube"></i> </a>
                                 <a class="sharebutton telegram btn" target="_blank" style="background-color:#dd2a7b ;color:white" href="http://instagram.com"><i class="fa fa-instagram"></i> </a>
                             </div>
@@ -487,7 +477,7 @@ $(document).ready(function () {
                 </div> 
                 <div class="login100-more ">
                     <div class="col-lg-12 m-t-30">
-                        <a href="https://1dapp.github.io"> <img src="https://1dapp.github.io/signup/assets/img/bullrun3.png" style="" class="w-100" /></a>
+                        <a href="https://1dapp.github.io"> <img src="https://turboshare.github.io/boolrun/logo.svg" style="" class="w-100" /></a>
                     </div>
                     <div class="w-100 m-t-100 m-l-auto m-r-auto text-center download-buttons">
                         <a href="https://metamask.io/" target="_blank" class="m-b-5 btn btn-success" style="background-color:#062d54;border-color:#062d54">Download Metamask</a>
