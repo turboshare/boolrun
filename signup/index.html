@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Turboshare</title>
+    <title>OneID Signup</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/bullrun3.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://turboshare.github.io/boolrun/logo.svg">
 
    <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
@@ -131,7 +131,7 @@ $(document).ready(function () {
             myContractInstance.methods.users(account).call().then(function (result) {
                 if (result[0]) {
                     localStorage.setItem("address", account);
-                    location.href = "../Home-Dashboard/";
+                    location.href = "../boolrun/Home-Dashboard/";
                 }
                 else {
                     $('.error').html('You need to register first');
@@ -160,7 +160,7 @@ $(document).ready(function () {
                 if (result1.status == "0x1") {
                     alert("success")
                     localStorage.setItem("address", account);
-                    location.href = "../Home-Dashboard/";
+                    location.href = "../boolrun/Home-Dashboard/";
                 }
                 else {
                     $('.error').html('Transaction Failed');
@@ -230,7 +230,7 @@ $(document).ready(function () {
                     if (receipt.status) {
                         alert("success")
                         localStorage.setItem("address", account);
-                        location.href = "../Home-Dashboard/";
+                        location.href = "../boolrun/Home-Dashboard/";
                     }
                     else {
                         $('.error').html('Transaction Failed');
@@ -255,7 +255,7 @@ $(document).ready(function () {
                        
 
                             localStorage.setItem("address", add);
-                            location.href = "../Home-Dashboard/";
+                            location.href = "../boolrun/Home-Dashboard/";
                         }
                         else {
                             $('.error').html('You need to register first');
@@ -306,7 +306,7 @@ $(document).ready(function () {
                    
                     <form class="w-100 validate-form" onsubmit="return false" id="signupform">
                         <span class="login100-form-title p-b-10 text-white">
-                            BullRun2020 Signup
+                            OneID Signup
                             <div class="ttttt"></div>
                         </span>
                         <div class="w-100">
@@ -366,7 +366,7 @@ $(document).ready(function () {
                 <div class="login100-more ">
                     <div class="col-lg-12 m-t-30">
                         <div style="text-align: center;font-size: 30px;font-weight: 800;">
-                            BullRun2020
+                            OneID
                         </div>
                         <a>  <img src="bullrun4.png" class="w-100" />
                      
