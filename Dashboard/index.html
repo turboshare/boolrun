@@ -10,7 +10,7 @@
 
         if (account == null) {
             alert("You are not Logged In. Please Login first..!!");
-           location.href = "https://turboshare.github.io/boolrun/login";
+           location.href = "https://maticforce.space/signin/";
         }
     </script>
 
@@ -206,17 +206,17 @@ function getVariableData() {
 
     myContractInstance.methods.users(account).call().then(function (result1) {
         
-            $('.currentuseridlink').html("https://mfs.maticforce.space/register?referralid=" + result1.id);
+            $('.currentuseridlink').html("https://maticforce.space/register?referralid=" + result1.id);
 
 
 
 
-            $('.currentuseridlink').val("https://mfs.maticforce.space/register?referralid=" + result1.id);
+            $('.currentuseridlink').val("https://maticforce.space/register?referralid=" + result1.id);
 
 
 
 
-            $('.sharebutton').attr('data-url', "https://mfs.maticforce.space/mfs/register?referralid=" + result1.id);
+            $('.sharebutton').attr('data-url', "https://maticforce.space/register?referralid=" + result1.id);
             $('.currentuserid').html(result1.id);
             $('.currentaddress').html(account);
             $('.ethaddress').attr('href', 'https://polygonscan.com/address/' + account);
@@ -1592,7 +1592,7 @@ $(document).ready(function () {
         $('.logoutuser').click(function () {
         
             var account = localStorage.removeItem("address", null);
-            location.href = "https://maticforce.github.io/mfs/login";
+            location.href = "https://maticforce.space/signin/";
         });
     });
     </script>
